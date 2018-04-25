@@ -11,6 +11,6 @@ describe('text', () => {
   });
   it('if no text given, returns empty string', () => {
     // WRITE ME!
->>>>>>> 7c146bd7318495a74523450f45f51834012c5cb7
+
   });
 });

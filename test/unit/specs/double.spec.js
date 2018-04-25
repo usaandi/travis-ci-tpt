@@ -27,10 +27,10 @@ describe('double', () => {
   it('double "kala" is not number and throws exception', () => {
     expect(() => {
       double('kala');
-    }).toThrowError('no input given!');
+    }).toThrowError('input need to be number!');
   });
 
   it('double without args throws exception', () => {
-    expect(double).toThrowError('input need to be number!');
+    expect(double).toThrowError('no input given!');
   });
 });
