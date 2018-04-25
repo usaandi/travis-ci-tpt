@@ -10,7 +10,7 @@ describe('text', () => {
     expect(t1).toBe('kala');
   });
   it('if no text given, returns empty string', () => {
-    const t1 = text();
-    expect(t1).toBe('');
+    // WRITE ME!
+>>>>>>> 7c146bd7318495a74523450f45f51834012c5cb7
   });
 });
