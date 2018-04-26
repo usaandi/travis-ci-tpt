@@ -9,9 +9,19 @@ describe('HelloWorld.vue', () => {
       .toEqual('Welcome to someone homepage!');
   });
 
-  it('we have 2 buttons in div.buttons', () => {
+  it('we have 4 buttons in div.buttons', () => {
     const Constructor = Vue.extend(HelloWorld);
     const vm = new Constructor().$mount();
-    expect(vm.$el.querySelectorAll('div.buttons button').length).toBe(4);
+    const number = vm.$el.querySelectorAll('div.buttons button').length;
+    expect(number).toBe(4);
+    expect(number).toMatchSnapshot();
+  });
+
+  it('match buttons html', () => {
+    const Constructor = Vue.extend(HelloWorld);
+    const vm = new Constructor().$mount();
+    const html = vm.$el.querySelector('div.buttons').innerHTML;
+    console.log('html', html);
+    expect(html).toMatchSnapshot();
   });
 });
