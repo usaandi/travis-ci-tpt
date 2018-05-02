@@ -1,3 +1,3 @@
-export default function random() {
-  return Math.floor(Math.random() * 6) + 1;
-}
+module.exports = function random(max = 6) {
+  return Math.floor(Math.random() * max) + 1;
+};
